@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  src: url("../fonts/ProximaNovaRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  src: url("../fonts/ProximaNovaSemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  src: url("../fonts/ProximaNovaBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 900;
+  src: url("../fonts/ProximaNovaBlack.ttf") format("truetype");
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Proxima Nova";
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.intro {
+  background-image: url("../img/intro-background.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  /* height: 870px; */
+  height: 990px;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  background-color: #2b2a29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 85px;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* width: 756px; */
+}
+
+.navigation__item {
+  margin-left: 15px;
+}
+
+.navigation__link {
+  color: #2b2a29;
+  /* font-family: "Proxima Nova - Semibold"; */
+  font-size: 16px;
+  font-weight: 600;
+  /* line-height: 60px; */
+  text-transform: uppercase;
+  /* Text style for "Главная" */
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.recall {
+  color: #ffffff;
+  /* font-family: "Proxima Nova - Semibold"; */
+  font-size: 16px;
+  font-weight: 600;
+  /* line-height: 60px; */
+  /* text-decoration: underline; */
+  text-transform: uppercase;
+  /* Text style for "обратный з" */
+  letter-spacing: 0.4px;
+  text-decoration: none;
+}
+
+.phone {
+  color: #2b2a29;
+  /* font-family: "Proxima Nova - Semibold"; */
+  font-size: 16px;
+  font-weight: 600;
+  /* line-height: 60px; */
+  text-transform: uppercase;
+  /* Text style for "+7 962 459" */
+  letter-spacing: 0.4px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+.intro__navigation--center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order {
+  color: #ffffff;
+  /* font-family: "Proxima Nova - Semibold"; */
+  font-size: 14px;
+  font-weight: 600;
+  /* line-height: 60px; */
+  text-transform: uppercase;
+  /* Text style for "у, знать ф" */
+  letter-spacing: 0.35px;
+  /* width: 334px; */
+  /* height: 60px; */
+  border-radius: 6px;
+  /* border: 1px solid #eaf3f4; */
+  background-color: #ff4040;
+  padding: 20px 22px;
+  text-decoration: none;
+  display: block;
+  max-width: 334px;
+  margin: 0 auto;
+  margin-top: 440px;
+}
+
+.intro__title {
+  color: #2b2a29;
+  /* font-family: "Proxima Nova - Black"; */
+  font-size: 60px;
+  font-weight: 900;
+  /* line-height: 60px; */
+  text-transform: uppercase;
+  /* Text style for "Г, рузопер" */
+  letter-spacing: 0.3px;
+  /* Text style for "в Ставропо" */
+  /* color: #ff4040; */
+  /* letter-spacing: 0.3px; */
+  text-align: center;
+  margin: 0;
+}
+
+.intro__title b {
+  color: #ff4040;
+}
+
+.intro__footer {
+  background-color: #2b2a29;
+}
+
+.features {
+  background-color: #2b2a29;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.features__item {
+  display: flex;
+  align-items: center;
+}
+
+.features__item img {
+  margin-right: 25px;
+}
+
+.features__item p {
+  color: #ffffff;
+  /* font-family: "Proxima Nova"; */
+  font-size: 18px;
+  font-weight: 400;
+  /* line-height: 60px; */
+  /* Text style for "По фиксиро" */
+  letter-spacing: 0.09px;
+  margin: 0;
+}
