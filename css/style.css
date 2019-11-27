@@ -22,6 +22,12 @@
   src: url("../fonts/ProximaNovaBlack.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Georgia";
+  font-weight: 400;
+  src: url("../fonts/GeorgiaItalic.woff") format("woff");
+}
+
 *,
 *::after,
 *::before {
@@ -44,8 +50,12 @@ body {
 
 .container {
   width: 1300px;
-  padding: 0 15px;
+  /* padding: 0 15px; */
   margin: 0 auto;
+}
+
+.container--flex {
+  display: flex;
 }
 
 .intro {
@@ -224,5 +234,383 @@ body {
   /* line-height: 60px; */
   /* Text style for "По фиксиро" */
   letter-spacing: 0.09px;
+  margin: 0;
+}
+
+.services {
+  padding-top: 100px;
+  /* padding-bottom: 70px; */
+}
+
+.title {
+  color: #2b2a29;
+  /* font-family: "Proxima Nova - Black"; */
+  font-size: 48px;
+  font-weight: 900;
+  /* line-height: 60px; */
+  text-transform: uppercase;
+  /* Text style for "Н, аши усл" */
+  letter-spacing: 0.24px;
+  margin: 0;
+  text-align: center;
+}
+
+.services__title {
+  margin-bottom: 110px;
+}
+
+.services__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.services__item {
+  /* margin-right: 30px; */
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.services__item:first-child {
+  margin-left: 0;
+}
+
+.services__item:nth-child(4n + 1) {
+  margin-left: 0;
+}
+
+.services__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.item {
+  width: 300px;
+  height: 395px;
+  border: 1px solid #d9d7d5;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item h3 {
+  color: #2b2a29;
+  /* font-family: "Proxima Nova"; */
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0 40px;
+  padding-top: 230px;
+}
+
+.item span {
+  color: #ff4040;
+  /* font-family: "Proxima Nova"; */
+  font-size: 24px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.item a {
+  color: #a7a39e;
+  /* font-family: "Proxima Nova"; */
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.item--one {
+  background-image: url("../img/services-image-one.jpg");
+}
+
+.item--two {
+  background-image: url("../img/services-image-two.jpg");
+}
+
+.item--three {
+  background-image: url("../img/services-image-three.jpg");
+}
+
+.item--four {
+  background-image: url("../img/services-image-four.jpg");
+}
+
+.item--five {
+  background-image: url("../img/services-image-five.jpg");
+}
+
+.item--six {
+  background-image: url("../img/services-image-six.jpg");
+}
+
+.item--seven {
+  background-image: url("../img/services-image-seven.jpg");
+}
+
+.item--eight {
+  background-image: url("../img/services-image-eight.jpg");
+}
+
+.item--nine {
+  background-image: url("../img/services-image-nine.jpg");
+}
+
+.item--ten {
+  background-image: url("../img/services-image-ten.jpg");
+}
+
+.item--eleven {
+  background-image: url("../img/services-image-eleven.jpg");
+}
+
+.item--twelve {
+  background-image: url("../img/services-image-twelve.jpg");
+}
+
+.devider {
+  /* height: 385px; */
+  /* background-color: #ffbe40; */
+  background-image: url("../img/devider-background-image.png");
+  height: 513px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.devider__order {
+  margin: 0;
+}
+
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.reviews__title {
+  margin-bottom: 90px;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* margin-bottom: 90px; */
+}
+
+.reviews__list::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: inset 50px 0px 50px 0px #ffffff;
+  z-index: 1;
+}
+
+.reviews__list::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  width: 100px;
+  height: 100%;
+  box-shadow: inset -50px 0px 50px 0px #ffffff;
+  z-index: 1;
+}
+
+.reviews__item {}
+
+.reviews__quote {
+  /* width: 636px; */
+  height: 295px;
+  border-radius: 6px;
+  border: 2px solid #d9d7d5;
+  background-color: #ffffff;
+  padding: 35px;
+  position: relative;
+}
+
+.reviews__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.reviews__quote span {
+  color: #2b2a29;
+  /* font-family: "Proxima Nova"; */
+  font-size: 18px;
+  font-weight: 700;
+  /* line-height: 60px; */
+  /* Text style for "Анастасия" */
+  letter-spacing: 0.09px;
+}
+
+.reviews__quote time {
+  color: #a7a39e;
+  /* font-family: "Proxima Nova"; */
+  font-size: 14px;
+  font-weight: 400;
+  /* line-height: 60px; */
+  /* Text style for "29 января" */
+  letter-spacing: 0.07px;
+  margin: 0;
+}
+
+.reviews__quote p {
+  color: #454443;
+  font-family: "Georgia", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  /* Text style for "С, разу хо" */
+  letter-spacing: 0.08px;
+  margin: 0;
+}
+
+.reviews__quote img {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about {
+  /* display: flex; */
+  /* align-items: center; */
+  padding-bottom: 90px;
+}
+
+.about__info {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.about__text {
+  width: 50%;
+  padding: 0 15px;
+}
+
+.about__title {
+  margin-bottom: 90px;
+}
+
+.about__info-text {
+  color: #454443;
+  /* font-family: "Proxima Nova"; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for ""Аврора"об" */
+  /* font-family: "Proxima Nova - Regular"; */
+  /* font-weight: 400; */
+  letter-spacing: 0.08px;
+  /* Text style for "Мы гаранти" */
+  /* font-family: "Proxima Nova Rg"; */
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about__info-title {
+  color: #454443;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about__info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about__info-list li {
+  color: #454443;
+  /* font-family: "Proxima Nova"; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for ""Аврора"об" */
+  /* font-family: "Proxima Nova - Regular"; */
+  /* font-weight: 400; */
+  letter-spacing: 0.08px;
+  /* Text style for "Мы гаранти" */
+  /* font-family: "Proxima Nova Rg"; */
+  /* margin: 0; */
+}
+
+.about__text-list {
+  counter-reset: list;
+}
+
+.about__text-list li {
+  list-style-type: none;
+  color: #454443;
+  /* font-family: "Proxima Nova"; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for "Чистые меб" */
+  letter-spacing: 0.08px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.about__text-list li::before {
+  counter-increment: list;
+  content: counter(list) "";
+  min-width: 43px;
+  height: 43px;
+  background-color: #ffbe40;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  color: #2b2a29;
+  /* font-family: "Proxima Nova - Black"; */
+  font-size: 24px;
+  font-weight: 900;
+  /* line-height: 24px; */
+  /* Text style for "1," */
+  letter-spacing: 0.12px;
+}
+
+.footer {
+  height: 170px;
+  background-color: rgba(43, 42, 41, 0.1);
+  /* opacity: 0.1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer p {
+  color: #a7a39e;
+  /* font-family: "Proxima Nova"; */
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 24px; */
+  /* Text style for "Н, е являе" */
+  letter-spacing: 0.08px;
   margin: 0;
 }
